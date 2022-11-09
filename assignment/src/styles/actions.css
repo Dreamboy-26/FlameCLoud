@@ -1,0 +1,22 @@
+.mainActionDiv{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+margin: auto;
+width: 800px;
+margin-top: 50px;
+}
+
+.title{
+    text-align: left;
+}
+
+.titleAndButtons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.manageAndPlanButtons{
+   
+   
+   
+}

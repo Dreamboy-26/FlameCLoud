@@ -1,0 +1,19 @@
+.accordian{
+    width: 100%;
+    border: 2px solid black;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+
+.planName{
+    display: flex;
+}
+
+.plandeleteButton{
+  
+  
+}

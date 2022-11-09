@@ -1,0 +1,9 @@
+.teams{
+    width: 400px;
+    border: 2px solid black;
+    gap: 20px;
+}
+
+.teamsName{
+    text-align: left;
+}
