@@ -13,10 +13,11 @@ margin-top: 50px;
 .titleAndButtons{
     display: flex;
     justify-content: space-between;
+    margin-top:-40px;
 }
 
 .manageAndPlanButtons{
    
-   
+   margin-top: 30px;
    
 }

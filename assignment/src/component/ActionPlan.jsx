@@ -23,7 +23,7 @@ const ActionPlan = () => {
   };
 
   const getPlan = async () => {
-    const updatedPlan = await axios.get("http://localhost:3000/plans");
+    const updatedPlan = await axios.get("https://flamecloudtest.herokuapp.com/plans");
     setNewPlan(updatedPlan.data);
   };
 
@@ -55,7 +55,7 @@ const ActionPlan = () => {
       </div>
 
       {plan && <PlanName setPlan={setplan} />}
-      {access && <Sop />}
+      {access && <Sop setAccess={setAccess} />}
     </>
   );
 };

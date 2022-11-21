@@ -2,7 +2,9 @@
     border: 2px solid black;
     width: 400px;
     text-align: left;
-  
+    margin: auto;
+    margin-top: 100px;
+    padding: 10px;
 }
 
 .planNameButton{
@@ -12,4 +14,8 @@
     border: 2px solid black;
     justify-content: space-between;
     align-items: center;
+}
+
+.teamsop{
+    margin-bottom: 100px;
 }

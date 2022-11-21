@@ -9,7 +9,7 @@ const PlanName = ({setPlan}) => {
   };
 
   const handleCreate = async() => {
-    await axios.post("http://localhost:3000/plans", { planName: planName });
+    await axios.post("https://flamecloudtest.herokuapp.com/plans", { planName: planName });
   };
 
   return (

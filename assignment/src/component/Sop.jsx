@@ -2,14 +2,14 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import "../styles/sop.css"
 import Teams from "./Teams";
-const Sop = () => {
+const Sop = ({setAccess}) => {
   const [getPlanSop, setGetPlanSop] = useState([]);
   
   const [teams, setTeams] = useState(false);
   const inputValue = [];
 
   const getPlan = async () => {
-    const updatedPlan = await axios.get("http://localhost:3000/plans");
+    const updatedPlan = await axios.get("https://flamecloudtest.herokuapp.com/plans");
     setGetPlanSop(updatedPlan.data);
   };
  
@@ -41,11 +41,11 @@ const Sop = () => {
             </>
           );
         })}
-        <button>Cancel</button>
-        <button>Update</button>
+        <button onClick={()=>setAccess(false)}>Cancel</button>
+        <button onClick={()=>setAccess(false)}>Update</button>
       </div>
     
-      <div>
+      <div className="teamsop">
       {teams && <Teams/>}
       </div>
     </>

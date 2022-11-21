@@ -4,7 +4,7 @@ import "../styles/teams.css";
 const Teams = () => {
   const [teamMates, setTeamMates] = useState([]);
   const selectTeams = async () => {
-    const updatedTeams = await axios.get("http://localhost:3000/teams");
+    const updatedTeams = await axios.get("https://flamecloudtest.herokuapp.com/teams");
     setTeamMates(updatedTeams.data);
   };
 
